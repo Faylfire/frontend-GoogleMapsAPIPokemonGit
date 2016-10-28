@@ -1,0 +1,75 @@
+<!-- This adapted from the "starter code" for 04_Hello Map in Udacity and Google's Maps
+API Course, Lesson 1 Mark Wales initial commit Jun 03-->
+<html>
+ <head>
+   <title>Pokemon Logger</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- styles put here, but you can include a CSS file and reference it instead! -->
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+   <!-- TODO 1: Create a place to put the map in the HTML-->
+   <div class="container">
+     <div class="options-box">
+      <h1>Pokemon History</h1>
+      <input id="show-listings" class='button' type="button" value="Show All Pokemon">
+      <input id="hide-listings" class='button' type="button" value="Hide All Pokemon">
+      <hr class="style-shadow"/>
+      <input id="address" autofocus size="24" type="textbox" VALUE="New York">
+      <input id="submit" class='button' type="button" value="Map Center">
+
+      <div class="wrap">
+        <div id="stretch">Street View Panoramic</div>
+      </div>
+
+      <span>Draw a polygon to search pokemons within!</span>
+      <input id="toggle-drawingtools" class="button" type="button" value="Drawing Tools">
+
+      <div><span>Search Area: </span><span id='poly-area'></span></div>
+     </div>
+     <!-- div where the googleMap will live   -->
+     <div id="map"> 
+     </div>
+
+     <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div style="text-align: right;"><a class="close" href="#">close <b>x</b></a></div>
+        <form id="myForm" method="POST" action="#" accept-charset="UTF-8">
+          <p><label>Pokemon<strong>*</strong><br>
+            <input id="pokeName" type="text" required size="24" name="name" value=""></label></p>
+          <p><label>Pokemon Type<strong>*</strong><br>
+            <select name="pokeType">
+              <option value="none">None</option>
+              <option value="bug">Bug</option>
+              <option value="dragon">Dragon</option>
+              <option value="electric">Electric</option>
+              <option value="fairy">Fairy</option>
+              <option value="fighting">Fighting</option>
+              <option value="fire">Fire</option>
+              <option value="flying">Flying</option>
+              <option value="ghost">Ghost</option>
+              <option value="grass">Grass</option>
+              <option value="ground">Ground</option>
+              <option value="normal">Normal</option>
+              <option value="poison">Poison</option>
+              <option value="psychic">Psychic</option>
+              <option value="rock">Rock</option>
+              <option value="water">Water</option>
+            </select></label></p>
+          <p><input id="add-Pokemon" class="button" type="button" name="addPoke" value="Add Pokemon"></p>
+        </form>
+      </div>
+
+     </div>
+     <script src="app.js"></script>
+   </div>
+
+   <!--TODO: Load the JS API ASYNCHRONOUSLY below.-->
+   <script async defer src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+   <script async defer src = "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=myAPIKey&v=3&callback=initMap">
+   </script>
+
+ </body>
+</html>
