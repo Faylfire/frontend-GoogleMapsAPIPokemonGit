@@ -11,6 +11,8 @@ Remember to replace myAPIKey at key=myAPIKey in the script tag below in index.ht
 
 ```
 
+10/28/2016
+
 ## Features
  
  - Add a poi (pokemon)
@@ -18,6 +20,15 @@ Remember to replace myAPIKey at key=myAPIKey in the script tag below in index.ht
  - Hide all pokemon
  - Search within an area for poi (pokemon)
  - Center map on input location
+
+## Future work
+
+ - Add localstorage usage for
+ - Add delete pokemon functionality
+ - Change to responsive design
+ - Refactor into MVC
+ - Add icon images for different elements (currently just placeholder pokemon)
+ - Clean up css
  
 
 
