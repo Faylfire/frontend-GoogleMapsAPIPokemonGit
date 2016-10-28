@@ -6,8 +6,10 @@ API Course, Lesson 1 Mark Wales initial commit Jun 03: [GoogleMapsAPI Udacity Co
 
 Remember to replace myAPIKey at key=myAPIKey in the script tag below in index.html:
 
+```html
 <script async defer src = "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=myAPIKey&v=3&callback=initMap">
 
+```
 
 ## Features
  
